@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400&display=swap');
+
+/*
+Default colors:
+    body font: #3d3d3d
+    h1: #ff3838
+    h2: #ff4d4d
+    button: #e67e22
+    button hover: #d35400
+ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Source Sans Pro', serif;
+    background: url('../img/background_1.jpg') fixed;
+    color: #3d3d3d;
+    height: 100vh;
+    width: 75%;
+    margin: 0 auto;
+    padding: 1rem;
+    text-align: center;
+}
+
+nav {
+    position: relative;
+    height: 5rem;
+}
+
+nav .nav-left {
+    position: absolute;
+    top: 1%;
+    left: 3%;
+}
+
+nav .nav-right {
+    position: absolute;
+    top: 1%;
+    right: 3%;
+}
+
+h1,
+h2 {
+    font-weight: 300;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #ff3838;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #ff4d4d;
+    margin-bottom: 0.5rem;
+}
+
+a:link,
+a:visited {
+    text-decoration: none;
+    color: inherit;
+}
+
+h1::after {
+    display: block;
+    height: 1px;
+    background-color: #fd1e1e;
+    content: " ";
+    width: auto;
+    margin: 0.5rem auto;
+}
+
+main {
+    margin: 2rem 0;
+    padding-bottom: 1rem;
+    font-weight: 300;
+}
+
+.post-entry {
+    font-family: inherit;
+    font-size: 1.2rem;
+    margin: 1rem auto;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    background-color: rgba(166, 213, 227, 0.667);
+    border-radius: 0.5rem;
+    width: 75%;
+    text-align: justify;
+    text-justify: newspaper;
+    padding: 1rem;
+}
+
+.form-post {
+    background-color: #bdc3c77b;
+    width: 50%;
+    margin-top: 1rem;
+    margin-left: 25%;
+    padding: 1rem;
+    overflow: auto;
+}
+
+.form-post p {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    padding: 0.5rem;
+}
+
+.form-post p label {
+    display: block;
+    margin-bottom: 0.3rem;
+}
+
+.save {
+    font-family: inherit;
+    font-size: 1rem;
+    padding: 1rem;
+    margin-top: 1rem;
+    width: 8rem;
+    background-color: #e67e22;
+    border: none;
+    border-radius: 1rem;
+    color: rgb(202, 198, 198);
+    cursor: pointer;
+    transition: background-color 0.5s;
+}
+
+.save:hover {
+    background-color: #d35400;
+}

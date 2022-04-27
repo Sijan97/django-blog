@@ -1,5 +1,5 @@
-from tkinter import CASCADE
 from django.db import models
+from django.urls import reverse
 
 
 class Post(models.Model):
@@ -11,3 +11,7 @@ class Post(models.Model):
     # Function that returns string representation of model.
     def __str__(self) -> str:
         return self.title
+
+    # Function to set cannonical url.
+    def get_absolute_url(self):
+        return reverse("post_detail", args=[str(self.id)])
